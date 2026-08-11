@@ -3,13 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciador De Eventos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/256/2680/2680593.png">
+    <link href="style.css" rel="stylesheet">
+    <title>Gerenciador de Eventos</title>
 </head>
+
 <body>
     <div id="app">
-        
+
+        <form id="verificacao">
+
+            <input placeholder="Insira o nome do evento">
+
+            <input type="datetime-local" placeholder="Horário do evento"> 
+
+            <select>
+                <option selected disabled>Selecione um evento</option>
+                <option>Churrasco</option>
+                <option>Festa Noturna / Coquetel</option>
+                <option>Aniversário Infantil</option>
+            </select>
+
+            <div id="pessoas">
+
+                <input type="number" placeholder="Convidados adultos">
+                <input type="number" placeholder="Convidados crianças">
+
+            </div>
+
+            <span>R$</span>
+            <input placeholder="Insira o orçamento">
+
+            <button type="submit">Confirmar</button>
+        </form>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
