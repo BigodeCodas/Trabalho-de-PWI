@@ -13,11 +13,11 @@
 
         <form id="verificacao">
 
-            <input placeholder="Insira o nome do evento">
+            <input placeholder="Insira o nome do evento" id="event_nome">
 
-            <input type="datetime-local" placeholder="Horário do evento"> 
+            <input type="datetime-local" placeholder="Horário do evento" id="event_hour"> 
 
-            <select>
+            <select id="event_type">
                 <option selected disabled>Selecione um evento</option>
                 <option>Churrasco</option>
                 <option>Festa Noturna / Coquetel</option>
@@ -26,13 +26,13 @@
 
             <div id="pessoas">
 
-                <input type="number" placeholder="Convidados adultos">
-                <input type="number" placeholder="Convidados crianças">
+                <input type="number" placeholder="Convidados adultos" id="event_adults">
+                <input type="number" placeholder="Convidados crianças" id="event_children">
 
             </div>
 
             <span>R$</span>
-            <input placeholder="Insira o orçamento">
+            <input placeholder="Insira o orçamento" id="event_maxvalue">
 
             <button type="submit">Confirmar</button>
 
