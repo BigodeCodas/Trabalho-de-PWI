@@ -14,7 +14,8 @@ for (index in inputs) {
         console.log(inpuuut)
 
         if (ps.length >= inpuuut && ps[index] === inpuuut.value) {
-            alert("Bullshit")
+            alert("Bullshit");
         }
     })
 }
+// Um comentário pra zoar legal
