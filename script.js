@@ -3,18 +3,24 @@ const visor = document.querySelector ("#visor")
 const inputs = document.querySelectorAll ("input")
 const ps = []
 
+console.log (inputs)
 
-for (index in inputs){
-
-    let inpuuut = inputs [index]
-
+inputs.forEach ((inpuuut,index) => {
     inpuuut.addEventListener ("change" , function (cleide){
         
-        cleide.preventDefault
-        console.log (inpuuut)
+        cleide.preventDefault ();
         
-        if (ps.length >= inpuuut && ps [index] === inpuuut.value){
+        if (ps.includes(inpuuut.value)){  
             alert ("Bullshit")
+        }else{
+            ps[index] = inpuuut.value
+            alert ("bullshit")
+            console.log (ps)
         }
     })
-}
+})
+
+
+
+
+console.log (typeof inputs)
