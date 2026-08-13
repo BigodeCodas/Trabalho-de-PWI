@@ -1,3 +1,14 @@
+/* :root {
+    --exemplo-fonte-size: 12rem
+}
+
+* {
+    font-size: var(--exemplo-fonte-size);
+} 
+    
+Usem variáveis como no exemplo acima caso haja valores ou cores muito repetidos
+*/
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,3 +16,24 @@
     list-style: none;
     text-decoration: none;
 }
+
+body {
+    min-height: 100vh;
+    height: 100%;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+
+/* Colocar uma cor mais fraca e bordas com essa mesma cor mais forte */
