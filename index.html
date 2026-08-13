@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
 
             <input placeholder="Insira o nome do evento" id="event_nome">
 
-            <input type="datetime-local" placeholder="Horário do evento" id="event_hour"> 
+            <input type="datetime-local" placeholder="Horário do evento" id="event_hour">
 
             <select id="event_type">
                 <option selected disabled>Selecione um evento</option>
@@ -26,8 +27,8 @@
 
             <div id="pessoas">
 
-                <input type="number" placeholder="Convidados adultos" id="event_adults">
-                <input type="number" placeholder="Convidados crianças" id="event_children">
+                <input type="number" placeholder="Convidados adultos" id="event_adults" min="0">
+                <input type="number" placeholder="Convidados crianças" id="event_children" min="0">
 
             </div>
 
@@ -39,9 +40,8 @@
         </form>
 
         <div id="visor"></div>
-        
     </div>
-
     <script src="script.js"></script>
 </body>
+
 </html>

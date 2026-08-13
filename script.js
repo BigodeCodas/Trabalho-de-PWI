@@ -1,6 +1,6 @@
-const select = document.querySelector ("select")
-const visor = document.querySelector ("#visor")
-const inputs = document.querySelectorAll ("input")
+const select = document.querySelector("select")
+const visor = document.querySelector("#visor")
+const inputs = document.querySelectorAll("input")
 const ps = []
 
 console.log (inputs)
