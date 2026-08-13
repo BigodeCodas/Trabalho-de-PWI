@@ -11,3 +11,4 @@ for (inpuuut of inputs){
         alert ("funcionou")
     })
 }
+// Um comentário pra zoar legal
