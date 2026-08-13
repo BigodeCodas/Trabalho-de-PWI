@@ -1,10 +1,10 @@
 /* :root {
-    --exemplo-fonte-size: 12rem
+    --primary-color: #798A86
 }
 
 * {
-    font-size: var(--exemplo-fonte-size);
-} 
+    background-color: var(--primary-color);
+}
     
 Usem variáveis como no exemplo acima caso haja valores ou cores muito repetidos
 */
@@ -25,6 +25,8 @@ body {
 #app {
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     padding: 15px;
 }
 
@@ -32,8 +34,54 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    gap: 5px;
+    gap: 10px;
+    background-color: #81A4CD;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 150px;
+    width: 600px;
+    height: 800px;
+
 }
 
-/* Colocar uma cor mais fraca e bordas com essa mesma cor mais forte */
+input,
+select,
+button {
+    border: none;
+    background-color: #FBFDFF;
+    outline: none;
+}
+
+#pessoas {
+    max-width: 192px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#pessoas input {
+    width: 96px;
+}
+
+.orcamento {
+    background-color: #FBFDFF;
+}
+
+button {
+    background-color: rgb(5, 255, 5);
+    border-radius: 10px;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: rgb(0, 214, 0);
+}
+
+button:active {
+    background-color: rgb(5, 255, 5);
+}
