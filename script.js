@@ -1,9 +1,9 @@
-const select = document.querySelector("select")
-const visor = document.querySelector("#visor")
-const inputs = document.querySelectorAll("input")
-const ps = []
+const select = document.querySelector("select");
+const visor = document.querySelector("#visor");
+const inputs = document.querySelectorAll("input");
+const ps = [];
 
-console.log (inputs)
+console.log (inputs);
 
 inputs.forEach ((inpuuut,index) => {
     inpuuut.addEventListener ("change" , function (cleide){
@@ -11,16 +11,14 @@ inputs.forEach ((inpuuut,index) => {
         cleide.preventDefault ();
         
         if (ps.includes(inpuuut.value)){  
-            alert ("Bullshit")
+            alert ("Bullshit");
         }else{
-            ps[index] = inpuuut.value
-            alert ("bullshit")
-            console.log (ps)
+            ps[index] = inpuuut.value;
+            alert ("bullshit");
+            console.log (ps);
         }
     })
 })
-
-
 
 
 console.log (typeof inputs)
