@@ -15,6 +15,9 @@ verificacao.addEventListener('submit', function (e) {
     } else if (select.value === 'Aniversário Infantil') {
         document.title = 'Ger. Even. - Aniversário Infantil' //Else if pq se der sumbit sem nada no select da ruim
     }
+
+    //tempo gasto pra fazer o timer funcionar: 4 horas
+
     let timer_values = Array.from(inputs[1].value)
     const timer_text = document.createElement('p')
     let anos = (Number((timer_values.slice(0, 4).join(''))) - agora.getFullYear()) * 365 //Código BIZARRO que tira o ano selecionado na input, o subtrai com o ano atual, e transforma esse valor em dias
