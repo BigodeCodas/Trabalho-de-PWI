@@ -16,7 +16,7 @@
     <div id="app">
 
         <form id="verificacao">
-
+            <label>Insira os dados do evento abaixo</label>
             <input placeholder="Insira o nome do evento" id="event_nome">
 
             <input type="datetime-local" placeholder="Horário do evento" id="event_hour">
@@ -28,7 +28,7 @@
                 <option>Aniversário Infantil</option>
             </select>
 
-            <div id="pessoas">
+            <div class="pessoas">
 
                 <input type="number" placeholder="Adultos" id="event_adults" min="0">
                 <input type="number" placeholder="Crianças" id="event_children" min="0">
@@ -38,7 +38,7 @@
                 <span>R$</span>
                 <input placeholder="Insira o orçamento" id="event_maxvalue">
             </div>
-            <button type="submit"><i class="fa-solid fa-square-check"></i></button>
+            <button type="submit">Concluído</button>
 
         </form>
 
@@ -46,4 +46,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
